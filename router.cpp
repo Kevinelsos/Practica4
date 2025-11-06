@@ -1,6 +1,7 @@
 #include "router.h"
 #include <algorithm>
 #include <random>
+#include <iostream>
 #include <sstream>
 
 Router::Router(char id) : idRouter(id), camino(""), distancia(INT_MAX), visitado(false) {}

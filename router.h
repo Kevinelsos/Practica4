@@ -1,13 +1,11 @@
 #ifndef ROUTER_H
 #define ROUTER_H
 
-#include <iostream>
 #include <vector>
 #include <utility>
 #include <climits>
 #include <list>
 #include <string>
-#include <queue>
 
 using namespace std;
 
@@ -16,7 +14,7 @@ public:
     Router(char id);
     char idRouter;
     string camino;
-    vector<pair<Router*, int>> vecinos; // vecinos y costo
+    vector<pair<Router*, int>> vecinos;
     int distancia;
     bool visitado;
     void nuevoVecino(Router* vecino, int costo);
